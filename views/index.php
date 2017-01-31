@@ -102,25 +102,27 @@ foreach($products as $item){
 </section><!--/#recent-works-->
 
 <section id="gallery">
-    <div class="row">
-        <div class="portfolio-items">
-            <?php $banners = Yii::$app->getImageByGroup(2);
-            foreach($banners as $item){?>
-                <div class="portfolio-item <?=$item->keywords?> col-xs-12 col-sm-4 col-md-3">
-                    <div class="recent-work-wrap">
-                        <img class="img-responsive" src="<?='/'.$item->image?>" alt="<?=$item->name?>">
-                        <div class="overlay">
-                            <div class="recent-work-inner">
-                                <h3><a href="<?=$item->url?>"><?=$item->name?></a></h3>
-                                <p><?=$item->description?></p>
-                                <a class='preview' href="<?=$item->url?>" target="_blank" ref="nofollow">
-                                    <i class="fa fa-eye"></i>
-                                </a>
+    <div class="container">
+        <div class="row">
+            <div class="portfolio-items">
+                <?php $banners = Yii::$app->getImageByGroup(2);
+                foreach($banners as $item){?>
+                    <div class="portfolio-item <?=$item->keywords?> col-xs-12 col-sm-4 col-md-3">
+                        <div class="recent-work-wrap">
+                            <img class="img-responsive" src="<?='/'.$item->image?>" alt="<?=$item->name?>">
+                            <div class="overlay">
+                                <div class="recent-work-inner">
+                                    <h3><a href="<?=$item->url?>"><?=$item->name?></a></h3>
+                                    <p><?=$item->description?></p>
+                                    <a class='preview' href="<?=$item->url?>" target="_blank" ref="nofollow">
+                                        <i class="fa fa-eye"></i>
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            <?php } ?>
+                <?php } ?>
+            </div>
         </div>
     </div>
 </section>

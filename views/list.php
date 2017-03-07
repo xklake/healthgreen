@@ -11,7 +11,7 @@
         <div class="row">
             <div class="col-xs-12 col-sm-2 text-center">
                 <div class="entry-meta">
-                    <span id="publish_date"><?=substr(date('Y', $item->created_at), 2).'/'.date('m', $item->created_at).'月'?></span>
+                    <span id="publish_date"><?=substr(date('Y', $item->created_at), 2).'/'.date('m', $item->created_at).''?></span>
                     <span><i class="fa fa-user"></i> <a href="#"><?=$item->user->username?></a></span>
                     <span><i class="fa fa-comment"></i> <a href="<?=Yii::$app->urlManager->createAbsoluteUrl(['blog/default/view', 'id'=> $item->id])?>"><?=$item->getCommentsCount()?> Comments</a></span>
                     <!--span><i class="fa fa-heart"></i><a href="#">56 Likes</a></span-->
@@ -31,7 +31,7 @@
                     </a>
                 </h2>
 
-                <h3>
+                <h3 style="color: #02918c;">
                     <?=$item->brief?>
                 </h3>
 

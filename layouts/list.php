@@ -6,7 +6,7 @@
  * Time: 11:42 AM
  */
 
-$this->beginContent('@frontend/web/template/modern/layouts/main.php');
+$this->beginContent('@frontend/web/template/healthgreen/layouts/main.php');
 ?>
 
 <section id="blog" class="container">
@@ -15,7 +15,7 @@ $this->beginContent('@frontend/web/template/modern/layouts/main.php');
         <p class="lead">Panda Blog 2.0 官方博客系统</p>
     </div-->
 
-    <div class="blog">
+    <div class="blog" style="margin-top: 120px;">
         <div class="row">
             <div class="col-md-8">
                 <?= $content ?>

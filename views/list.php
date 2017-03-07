@@ -11,9 +11,9 @@
         <div class="row">
             <div class="col-xs-12 col-sm-2 text-center">
                 <div class="entry-meta">
-                    <span id="publish_date"><?=substr(date('Y', $item->created_at), 2).'年'.date('m', $item->created_at).'月'?></span>
+                    <span id="publish_date"><?=substr(date('Y', $item->created_at), 2).'/'.date('m', $item->created_at).'月'?></span>
                     <span><i class="fa fa-user"></i> <a href="#"><?=$item->user->username?></a></span>
-                    <span><i class="fa fa-comment"></i> <a href="<?=Yii::$app->urlManager->createAbsoluteUrl(['blog/default/view', 'id'=> $item->id])?>"><?=$item->getCommentsCount()?> 评论</a></span>
+                    <span><i class="fa fa-comment"></i> <a href="<?=Yii::$app->urlManager->createAbsoluteUrl(['blog/default/view', 'id'=> $item->id])?>"><?=$item->getCommentsCount()?> Comments</a></span>
                     <!--span><i class="fa fa-heart"></i><a href="#">56 Likes</a></span-->
                 </div>
             </div>
@@ -36,7 +36,7 @@
                 </h3>
 
                 <a class="btn btn-primary readmore" href="<?=Yii::$app->urlManager->createAbsoluteUrl(['blog/default/view', 'id'=> $item->id])?>">
-                    阅读全文  <i class="fa fa-angle-right"></i><i class="fa fa-angle-right"></i>
+                    View All  <i class="fa fa-angle-right"></i><i class="fa fa-angle-right"></i>
                 </a>
             </div>
         </div>

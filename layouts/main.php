@@ -12,7 +12,8 @@ use yii\helpers\Html;
     <meta charset="<?= Yii::$app->charset ?>"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0">
     <meta name="keywords" content="<?= Html::encode(Yii::$app->params['keywords']) ?>" />
-    <meta name="google-site-verification" content="a2f3_l9hmAcTyeS1zRCJaa2jFjFxA8pbepKYu1se9LQ" />    <meta name="description" content="<?= Html::encode(Yii::$app->params['description']) ?>" />
+    <meta name="google-site-verification" content="a2f3_l9hmAcTyeS1zRCJaa2jFjFxA8pbepKYu1se9LQ" />
+    <meta name="description" content="<?= Html::encode(Yii::$app->params['description']) ?>" />
     <meta name="author" content="panda cms">
     <title><?=$this->title?></title>
 

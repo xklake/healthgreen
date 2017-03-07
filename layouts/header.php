@@ -16,18 +16,22 @@
         <div class="collapse navbar-collapse  navbar-ex1-collapse navbar-right ">
             <ul class="nav navbar-nav" >
                 <li>
-                    <a href="#service1" class="page-scroll" >Service</a>
+                    <a href="/#service1" class="page-scroll" >Service</a>
                 </li>
 
                 <li>
-                    <a href="#price" class="page-scroll" >Price</a>
+                    <a href="/#price" class="page-scroll" >Price</a>
                 </li>
 
                 <li>
-                    <a href="#gallery" class="page-scroll" >Gallery</a>
+                    <a href="/#gallery" class="page-scroll" >Gallery</a>
                 </li>
                 <li>
-                    <a href="#contact" class="page-scroll" >Contact</a>
+                    <a href="/#contact" class="page-scroll" >Contact</a>
+                </li>
+
+                <li>
+                    <a href="<?=Yii::$app->getUrlManager()->createUrl(['/blog/default/catalog/','id'=>52])?>" class="page-scroll" >News</a>
                 </li>
             </ul>
         </div>

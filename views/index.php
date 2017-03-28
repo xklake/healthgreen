@@ -183,8 +183,7 @@ foreach($products as $item){
                 <br/>
 
                 <div>
-                    <i class="fa fa-history"></i>
-                    <span><?=Yii::$app->getTextBlock('history')->content?></span>
+                    <?=Yii::$app->getHtmlBlock('history-html')->content?>
                 </div>
             </div>
         </div>

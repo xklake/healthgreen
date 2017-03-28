@@ -35,7 +35,7 @@ use yii\helpers\Url;
                 </li>
 
                 <li>
-                    <a href="<?=Yii::$app->getUrlManager()->createAbsoluteUrl(['/blog/default/catalog/','id'=>52])?>" class="page-scroll" >News</a>
+                    <a href="<?=Yii::$app->getUrlManager()->createAbsoluteUrl(['/blog/default/catalog/','id'=>52])?>" class="page-scroll" >Massage Knowledge</a>
                 </li>
             </ul>
         </div>

@@ -52,7 +52,7 @@
                     $archives = \funson86\blog\models\BlogCatalog::getArchive();
                     foreach($archives as $item) {
                 ?>
-                    <li><a href="<?=Yii::$app->getUrlManager()->createUrl(['/blog/default/catalog/','createdmonth'=>$item['time']])?>"><i class="fa fa-angle-double-right"></i> <?=$item['time']?> <span class="pull-right">(<?=$item['count']?>)</span></a></li>
+                    <li><a href="<?=Yii::$app->getUrlManager()->createAbsoluteUrl(['blog/default/catalog','createdmonth'=>$item['time']])?>"><i class="fa fa-angle-double-right"></i> <?=$item['time']?> <span class="pull-right">(<?=$item['count']?>)</span></a></li>
                 <?php
                     }
                 ?>

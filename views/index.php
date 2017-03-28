@@ -11,6 +11,8 @@
 
     $products = \common\models\Product::find()->where(['status'=> \funson86\blog\models\Status::STATUS_ACTIVE])->andWhere(['=', 'catalog_id', 51])->all();
     $storeimg = Yii::$app->getImages('storepic');
+
+    $news = \funson86\blog\models\BlogPost::find()->where(['status'=>\funson86\blog\models\Status::STATUS_ACTIVE])->limit(4)->orderBy(['created_at' => SORT_DESC])->all();
 ?>
 
 <section id="main-slider">
@@ -191,3 +193,35 @@ foreach($products as $item){
         <iframe src="<?=Yii::$app->setting->get('googlemap')?>" style="width:100%;height: 350px;border: none;margin:0px;padding:0px;"></iframe>
     </div>
 </section><!--/#services-->
+
+
+<section id="news">
+    <div class="container-fluid">
+        <div class="text-center">
+            <span style="font-size: 2rem; ">Massage Knowledge</span>
+        </div>
+        <?php foreach($news as $item){ ?>
+        <div class="row">
+            <div class="col-xs-12 col-sm-3">
+                <a href="<?=Yii::$app->urlManager->createAbsoluteUrl(['blog/default/view', 'id'=> $item->id])?>">
+                    <img class="img-responsive  img-thumbnail" src="<?='/'.$item->banner?>">
+                </a>
+            </div>
+
+            <div class="col-xs-12 col-sm-9">
+                <div style="margin:10px 0px 10px 0px;">
+                    <a href="<?=Yii::$app->urlManager->createAbsoluteUrl(['blog/default/view', 'id'=> $item->id])?>">
+                        <h4 style="margin-top:0px;"><?=$item->title?></h4>
+                    </a>
+                </div>
+
+                <div>
+                    <blockquote>
+                        <?=$item->brief?>
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+        <?php } ?>
+    </div>
+</section>

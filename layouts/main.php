@@ -15,6 +15,7 @@ use yii\helpers\Html;
     <meta name="google-site-verification" content="a2f3_l9hmAcTyeS1zRCJaa2jFjFxA8pbepKYu1se9LQ" />
     <meta name="description" content="<?= Html::encode(Yii::$app->params['description']) ?>" />
     <meta name="author" content="panda cms">
+    <link rel="shortcut icon" href="/images/favicon.ico">
     <title><?=$this->title?></title>
 
     <!--[if lt IE 9]>

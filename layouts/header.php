@@ -12,8 +12,8 @@ use yii\helpers\Url;
                 <span class="icon-bar" style="background-color: #fff"></span>
             </button>
 
-            <a class="navbar-brand page-scroll" href="#page-top" style="color: lightgreen;font-size: 2.3rem;">
-                <?=Yii::$app->getTextBlock('logo')->content?>
+            <a class="navbar-brand page-scroll" href="<?=Url::home(true).'#page-top'?>" style="margin-left:0px;padding-left:0px;">
+                <img src="/images/logo.png" alt="<?=Yii::$app->getTextBlock('logo')->content?>" style="margin-left: 0px;"/>
             </a>
         </div>
 

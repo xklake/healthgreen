@@ -42,8 +42,8 @@
                             <div class="row slide-margin">
                                 <div class="col-sm-6">
                                     <div class="carousel-content">
-                                        <h1 class="animation animated-item-1"><?=$item->keywords?></h1>
-                                        <h2 class="animation animated-item-2"><?=$item->description?></h2>
+                                        <div class="animation animated-item-1" style="font-size: 4rem;"><?=$item->keywords?></div>
+                                        <div class="animation animated-item-2" style="font-size: 2.8rem;margin-top:20px;"><?=$item->description?></div>
                                     </div>
                                 </div>
 

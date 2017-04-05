@@ -40,14 +40,14 @@
                 <?php } ?>
                         <div class="container">
                             <div class="row slide-margin">
-                                <div class="col-sm-6">
+                                <div class="col-sm-9">
                                     <div class="carousel-content">
-                                        <div class="animation animated-item-1" style="font-size: 4rem;"><?=$item->keywords?></div>
-                                        <div class="animation animated-item-2" style="font-size: 2.8rem;margin-top:35px;"><?=$item->description?></div>
+                                        <div class="animation animated-item-1" style="font-size: 4rem;line-height: 50px;"><?=$item->keywords?></div>
+                                        <div class="animation animated-item-2" style="font-size: 2.8rem;margin-top:35px; "><?=$item->description?></div>
                                     </div>
                                 </div>
 
-                                <div class="col-sm-6 hidden-xs animation animated-item-4">
+                                <div class="col-sm-3 hidden-xs animation animated-item-4">
                                     <div class="slider-img">
                                         <!--img src="/images/modern/slider/img1.png" class="img-responsive"-->
                                     </div>

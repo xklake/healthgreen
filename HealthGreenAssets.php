@@ -29,7 +29,7 @@ class HealthGreenAssets extends AssetBundle
     ];
 
     public $js = [
-        //'js/jquery.js',
+        'js/jquery.js',
         'js/bootstrap.min.js',
         'js/jquery.prettyPhoto.js',
         'js/jquery.isotope.min.js',
@@ -42,7 +42,7 @@ class HealthGreenAssets extends AssetBundle
 
     public $depends = [
         // 'yii\web\YiiAsset',
-        'yii\web\JqueryAsset',
+        //'yii\web\JqueryAsset',
     ];
 
     public function init()

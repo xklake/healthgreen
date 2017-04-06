@@ -7,13 +7,15 @@
  */
 
 namespace frontend\web\template\HealthGreen;
+use yii;
 use yii\web\AssetBundle;
 
 
 class HealthGreenAssets extends AssetBundle
 {
     public $basePath = '@webroot';
-    public $baseUrl = '@web/healthgreen/assets';
+//    public $baseUrl = 'http://brighton-massage.co.uk/healthgreen/assets';
+    public $baseUrl = '/healthgreen/assets';
 
 
     public $css = [
@@ -42,4 +44,14 @@ class HealthGreenAssets extends AssetBundle
         // 'yii\web\YiiAsset',
         'yii\web\JqueryAsset',
     ];
+
+    public function init()
+    {
+        if($this->baseUrl != null){
+            $this->baseUrl = Yii::$app->urlManager->getHostInfo().$this->baseUrl;
+        }
+
+        parent::init();
+    }
+
 }

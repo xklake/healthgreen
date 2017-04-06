@@ -9,7 +9,7 @@
 
 <div class="blog-item">
     <?php if($post->banner != null && $post->banner != "") {?>
-        <img class="img-responsive img-blog" src="<?='/'.$post->banner?>" width="100%" alt="" />
+        <img class="img-responsive img-blog" src="<?= Yii::$app->urlManager->getHostInfo().'/'.$post->banner?>" width="100%" alt="" />
     <?php } ?>
 
     <div class="row">

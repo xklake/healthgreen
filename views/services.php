@@ -73,7 +73,7 @@
         <div class="get-started center wow fadeInDown">
             <h2>这不是一次性的开发，而是长久的承诺</h2>
             <p class="lead">
-                软件和网站虽然是一次性的完成，可是不同专业程度完成的质量参差不齐，
+                软件开发和网站设计虽然是一次性的完成，可是不同专业程度的团队完成的质量却可能有很大的差异，
                 <br>选择一个稳定的，长期，可靠，安全的团队来执行是至关紧要的。
             </p>
 
@@ -96,11 +96,13 @@
                     ?>
                     <div class="col-md-4 wow fadeInDown">
                         <div class="clients-comments text-center">
-                            <img src="<?='/'.$item->image?>" class="img-circle" alt="">
+                            <img src="<?=Yii::$app->urlManager->getHostInfo().'/'.$item->image?>" class="img-circle" alt="">
                             <h3>
                                 <?=$item->description?>
                             </h3>
-                            <h4><span>-<?=$item->name?></span></h4>
+                            <h4>
+                              <span>-<?=$item->name?></span>
+                            </h4>
                         </div>
                     </div>
                 <?php } ?>

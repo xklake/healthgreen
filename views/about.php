@@ -5,6 +5,7 @@
  * Date: 6/10/16
  * Time: 11:35 AM
  */
+ use yii; 
 ?>
 
 <section id="about-us">
@@ -26,13 +27,13 @@
 
                 <div class="carousel-inner">
                     <div class="item active">
-                        <img src="/images/modern/slider_one.jpg" class="img-responsive" alt="">
+                        <img src="<?=Yii::$app->urlManager->getHostInfo().'/images/modern/slider_one.jpg'?>" class="img-responsive" alt="">
+                    </div>
+                    <div class="item"> 
+                        <img src="<?=Yii::$app->urlManager->getHostInfo().'/images/modern/slider_one.jpg'?>" class="img-responsive" alt="">
                     </div>
                     <div class="item">
-                        <img src="/images/modern/slider_one.jpg" class="img-responsive" alt="">
-                    </div>
-                    <div class="item">
-                        <img src="/images/modern/slider_one.jpg" class="img-responsive" alt="">
+                        <img src="<?=Yii::$app->urlManager->getHostInfo().'/images/modern/slider_one.jpg'" class="img-responsive" alt="">
                     </div>
                 </div>
 

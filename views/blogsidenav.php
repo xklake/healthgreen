@@ -5,6 +5,8 @@
  * Date: 7/28/16
  * Time: 2:49 PM
  */
+use yii; 
+
 ?>
 
 <div class="widget categories">

@@ -55,7 +55,7 @@
                                 </p>
 								
 								<p>
-									<img src="/images/wechat.png">
+									<img src="<?=Yii::$app->urlManager->getHostInfo().'/images/wechat.png'">
 								</p>
                             </address>
                         </li>
